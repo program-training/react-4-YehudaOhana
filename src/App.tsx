@@ -1,12 +1,12 @@
-import "./App.css";
-import { Example } from "./components/Example/Example";
+import Grandpa from "./components/Grandpa/Grandpa";
+import TextContext from "./context/textContext";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <Example />{" "}
-    </>
+    <TextContext>
+      <Grandpa />
+    </TextContext>
   );
-}
+};
 
 export default App;
